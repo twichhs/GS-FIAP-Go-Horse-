@@ -1,0 +1,14 @@
+recebido_em          device_id  tipo             severidade  profundidade_mm  umidade_pct  trecho                           
+-------------------  ---------  ---------------  ----------  ---------------  -----------  ---------------------------------
+2026-11-16 20:27:46  esp32-sim  alerta_recebido  info        0                63.0         Av. Lins de Vasconcelos, 800-1200
+2026-11-16 20:27:46  esp32-sim  mudanca_trecho   info        0                63.0         Av. Lins de Vasconcelos, 800-1200
+2026-11-16 20:27:45  esp32-sim  reporte_manual   info        0                63.0         Av. Lins de Vasconcelos, 800-1200
+2026-11-16 20:27:45  esp32-sim  mudanca_trecho   info        0                63.0         Av. Lins de Vasconcelos, 800-1200
+2026-11-16 20:27:44  esp32-sim  buraco           leve        27               92.0         Rua Domingos de Morais, 2000-2400
+2026-11-16 20:27:44  esp32-sim  buraco           leve        18               92.0         Rua Domingos de Morais, 2000-2400
+2026-11-16 20:27:43  esp32-sim  mudanca_trecho   info        0                92.0         Rua Domingos de Morais, 2000-2400
+2026-11-16 20:27:43  esp32-sim  buraco           grave       63               62.0         Av. Lins de Vasconcelos, 800-1200
+2026-11-16 20:27:42  esp32-sim  buraco           grave       58               62.0         Av. Lins de Vasconcelos, 800-1200
+2026-11-16 20:27:41  esp32-sim  buraco           leve        22               62.0         Av. Lins de Vasconcelos, 800-1200
+2026-11-16 20:27:40  esp32-sim  mudanca_trecho   info        0                62.0         Av. Lins de Vasconcelos, 800-1200
+2026-11-16 20:27:38  esp32-sim  mudanca_trecho   info        0                58.0         Rua Vergueiro, 1000-1400         

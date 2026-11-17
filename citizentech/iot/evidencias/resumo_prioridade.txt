@@ -1,0 +1,4 @@
+nome                               graves  leves  reportes  deteccoes_visao  prof_max_mm  umidade_media  pontuacao  nivel
+---------------------------------  ------  -----  --------  ---------------  -----------  -------------  ---------  -----
+Av. Lins de Vasconcelos, 800-1200  2       1      1         0                63           62.5           9.0        alta 
+Rua Domingos de Morais, 2000-2400  0       2      0         0                27           92.0           2.4        baixa

@@ -1,0 +1,236 @@
+================================================================================
+ GLOBAL SOLUTION 2026.2 — CITIZENTECH
+ Enunciados das três disciplinas
+================================================================================
+
+ Tema geral: Protótipo Integrado CitizenTech com IA para Apoiar o Cidadão
+ Tema escolhido pelo grupo: Monitor de Pavimento (detecção e priorização de
+ buracos nas vias urbanas)
+
+ Conteúdo:
+   1. IoT (Sensores)
+   2. Visão Computacional
+   3. Generative AI and Advanced Nets (GenAI)
+
+
+################################################################################
+ 1. IoT (SENSORES)
+################################################################################
+
+Tema: Protótipo Integrado CitizenTech com IA para Apoiar o Cidadão
+
+Contextualização do Problema:
+Como os dados de um dispositivo conectado podem ajudar a melhorar a vida de alguém?
+Nesta atividade, vocês desenvolverão o módulo IoT da solução CitizenTech escolhida para a Global Solution.
+Utilizem o mesmo problema, público e contexto das demais disciplinas, demonstrando como dados do
+ambiente ou de uma interação física contribuem para melhorar a vida do cidadão.
+
+Objetivo:
+Construir e demonstrar um fluxo funcional:
+Entrada → ESP32 → MQTT → uso dos dados na solução CitizenTech
+Utilizem os conteúdos trabalhados na disciplina para coletar e transmitir dados relevantes ao problema
+escolhido. O processamento com IA poderá ocorrer em outro componente da solução integrada.
+
+Solução IoT
+O projeto deverá:
+• Utilizar um ESP32, físico ou simulado com pelo menos 2 sensores.
+• Transmitir os dados por MQTT e demonstrar seu recebimento por outro componente.
+• Evidenciar o armazenamento das informações em banco de dados.
+• Utilizar os dados para apresentar uma informação útil, emitir um alerta ou produzir uma ação
+relacionada ao problema.
+
+Demonstre pelo menos duas situações de entrada, mostrando as mensagens transmitidas e o efeito no
+comportamento da solução.
+
+São aceitos protótipos físicos ou simulados, com evidências da execução. Identifique o que foi implementado
+ou simulado e explique suas limitações. Ferramentas como Node-RED, n8n e Telegram poderão ser utilizadas
+conforme a necessidade do projeto e os conteúdos estudados na disciplina.
+
+Informações sobre a entrega
+- Capa com título, nomes e RMs.
+- Problema, público beneficiado e evidência de sua relevância.
+- Arquitetura da solução, origem dos dados, comunicação MQTT.
+- Evidências de funcionamento, resultados dos testes com diferentes entradas e limitações identificadas.
+- Código utilizado.
+- Relação com pelo menos um ODS.
+
+
+################################################################################
+ 2. VISÃO COMPUTACIONAL
+################################################################################
+
+A identificação automatizada de problemas no ambiente urbano é fundamental para otimizar a gestão municipal, permitindo que a administração pública priorize inspeções, reduza custos operacionais e melhore a qualidade de vida nas cidades. Neste exercício, sua equipe deverá incorporar ao protótipo CitizenTech um módulo de visão computacional capaz de identificar ocorrências em diferentes frentes da gestão urbana, utilizando imagens ou vídeos.
+Sua equipe pode escolher um dos seguintes nichos de atuação urbana, ou propor um de interesse social, o qual deve estar especificado na documentação e na implementação da solução de forma clara e objetiva:
+
+    1. Infraestrutura e Pavimentação: Identificação de fissuras em superfícies de concreto ou detecção de buracos e danos severos na pavimentação viária.
+    2. Limpeza Urbana e Meio Ambiente: Detecção de pontos de descarte irregular de resíduos, entulhos ou acúmulo inadequado de lixo em vias públicas e terrenos baldios.
+    3. Sinalização Viária e Mobilidade Urbana: Identificação de placas de trânsito danificadas, pichadas, ocultas por vegetação ou ausentes, além de obstruções em calçadas e rampas de acessibilidade.
+A solução desenvolvida deverá sinalizar possíveis necessidades de intervenção ou inspeção, apresentando o resultado visual e a respectiva taxa de confiança do modelo.
+
+------------------------------
+Atividade
+    1. Selecione e prepare os dados: Escolha uma base de dados pública compatível com o nicho selecionado (ou monte uma amostra rotulada para o protótipo). Examine as imagens e seus rótulos, realizando os tratamentos necessários, como redimensionamento e normalização. Separe os conjuntos de treinamento, validação e teste de forma adequada, evitando distribuir recortes ou variações da mesma imagem original entre conjuntos diferentes.
+
+    2. Implemente a solução: Desenvolva um algoritmo de classificação de imagens ou de localização de objetos por meio de caixas delimitadoras (bounding boxes). Utilize abordagens baseadas em redes neurais convolucionais (CNN), transferência de aprendizado (transfer learning) ou detectores de objetos pré-treinados (como YOLO ou SSD). Para viabilizar a atividade no prazo estipulado, utilize uma amostra representativa dos dados e arquiteturas previamente treinadas.
+
+    3. Avalie a qualidade dos resultados: Para tarefas de classificação, apresente métricas como precisão, recall, F1-score e matriz de confusão; para tarefas de detecção de objetos, apresente precisão, recall e mAP (Mean Average Precision). Analise exemplos práticos de acertos e erros, considerando interferências comuns do ambiente urbano, tais como sombras, variações severas de iluminação, texturas complexas ou obstruções parciais.
+
+    4. Demonstre a integração: Disponibilize uma funcionalidade funcional no protótipo CitizenTech que receba uma imagem de entrada e apresente a classificação ou os danos/ocorrências localizados, acompanhados da confiança do modelo. Demonstre também o processamento de um vídeo curto ou de uma sequência de imagens para simular o monitoramento urbano contínuo.
+
+    5. Meça o desempenho e justifique a arquitetura: Registre a latência média por imagem e a taxa de processamento em quadros por segundo (FPS), informando detalhadamente o hardware/equipamento e a resolução de imagem utilizados. Explique as escolhas de arquitetura, as etapas de pré-processamento e o limiar de confiança adotado, avaliando o equilíbrio entre a qualidade das previsões e a velocidade de execução.
+
+----------------------------------------------
+Entregas
+    • Notebook ou código executável: Contendo scripts comentados com a preparação dos dados, implementação do modelo, treinamento/ajuste e avaliação métrica.
+    • Vídeo de demonstração: Gravação curta mostrando a funcionalidade integrada ao CitizenTech, exibindo testes com imagens estáticas e o processamento dinâmico de vídeo ou sequência de quadros.
+    • Relatório técnico breve: Documento contendo as métricas de desempenho obtidas, latência, justificativa técnica da arquitetura escolhida e análise detalhada dos erros do modelo.
+
+----------------------------------------------
+Critérios de Avaliação
+Serão avaliados a qualidade e precisão na identificação das características visuais ou ocorrências urbanas, o rigor na avaliação métrica do modelo, a clareza e usabilidade da integração ao CitizenTech, o desempenho computacional mensurado no processamento contínuo e a solidez da justificativa técnica das escolhas de engenharia de software e machine learning.
+
+Lembre-se: A solução tecnológica tem o objetivo de apoiar a triagem e otimizar rotas de inspeção das equipes municipais. A detecção automatizada de uma ocorrência isolada por imagem não substitui a vistoria técnica presencial para atestar a gravidade real ou o risco estrutural/operacional associado.
+
+
+################################################################################
+ 3. GENERATIVE AI AND ADVANCED NETS (GENAI)
+################################################################################
+
+Global Solution 2026.2 — Generative AI and Advanced Nets
+
+Desafio: Inteligência Generativa para uma sociedade melhor
+
+A Global Solution 2026.2 tem como tema CitizenTech: desenvolver soluções tecnológicas que contribuam para melhorar a vida das pessoas em cidades, comunidades ou áreas rurais.
+
+Nesta disciplina, o desafio é desenvolver uma aplicação que utilize Inteligência Artificial Generativa e/ou arquiteturas avançadas de redes neurais para contribuir com o problema escolhido pelo grupo.
+
+A solução deverá demonstrar como modelos generativos podem criar conteúdo, interpretar informações, responder perguntas, apoiar decisões, automatizar tarefas ou gerar novas possibilidades para o público definido pelo grupo.
+
+O objetivo não é apenas utilizar uma ferramenta de IA pronta, mas desenvolver uma aplicação que demonstre o uso de conceitos e técnicas estudados na disciplina, justificando as escolhas e avaliando os resultados.
+
+--------------------------------------------------------------------------------
+Etapas obrigatórias
+--------------------------------------------------------------------------------
+
+1. Definir o problema e a aplicação
+- Apresentar o problema CitizenTech escolhido pelo grupo.
+- Identificar o público impactado e o contexto de aplicação.
+- Explicar como a Inteligência Artificial Generativa poderá contribuir para a solução.
+- Definir qual funcionalidade será desenvolvida e qual benefício deverá proporcionar ao público.
+
+2. Escolher a abordagem de Inteligência Artificial
+O grupo deverá selecionar uma ou mais abordagens estudadas na disciplina, de acordo com a necessidade da aplicação.
+
+Algumas possibilidades:
+- Autoencoders e VAEs: representação, reconstrução e geração de dados.
+- GANs: geração de imagens ou outros tipos de dados sintéticos.
+- Diffusion Models: geração e transformação de imagens e outros conteúdos.
+- Transformers e Foundation Models: processamento e geração de texto, interpretação de informações e interação em linguagem natural.
+- Prompt Engineering: construção e avaliação de instruções para orientar modelos generativos.
+- RAG (Retrieval-Augmented Generation): geração de respostas utilizando documentos e bases de conhecimento como fonte de informação.
+- Arquiteturas agênticas: sistemas capazes de utilizar ferramentas, acessar informações e executar etapas de um fluxo para atingir determinado objetivo.
+
+O grupo deverá justificar a abordagem escolhida, explicando por que ela é adequada ao problema.
+
+3. Desenvolver a aplicação generativa
+- Implementar a funcionalidade principal utilizando a abordagem escolhida.
+- Demonstrar como os dados de entrada são processados e como o resultado é gerado.
+- Apresentar os modelos, ferramentas, bibliotecas e serviços utilizados.
+- Explicar a arquitetura da solução e o papel de cada componente.
+
+A implementação poderá utilizar modelos pré-treinados, APIs, modelos open source ou arquiteturas desenvolvidas pelo grupo, desde que exista uma contribuição técnica demonstrável.
+
+4. Construir e integrar o fluxo da solução
+- Desenvolver um fluxo funcional que conecte a entrada do usuário ou dos dados ao processamento pela IA e à geração do resultado.
+- Quando aplicável, integrar fontes de dados, documentos, mecanismos de recuperação de informação (RAG), ferramentas ou agentes.
+- Demonstrar como os componentes se comunicam e como os resultados são apresentados ao usuário.
+- A solução poderá utilizar ferramentas de orquestração, como Langflow e n8n, ou implementação por código ou mesmo utilizando o langchain como fizemos em aula e um app com gradio
+
+5. Avaliar o funcionamento e a qualidade dos resultados
+- Realizar testes com diferentes entradas e cenários.
+- Apresentar exemplos dos resultados produzidos pelo modelo.
+- Avaliar a qualidade, coerência, relevância e utilidade das respostas ou conteúdos gerados.
+- Quando aplicável, analisar alucinações, respostas incorretas, limitações do modelo e dependência das fontes de informação.
+- Apresentar evidências dos testes e explicar os resultados obtidos.
+
+6. Analisar limitações e responsabilidade no uso da IA
+- Identificar limitações técnicas da abordagem escolhida.
+- Considerar riscos relacionados a vieses, privacidade, segurança e confiabilidade.
+- Explicar como a solução pode reduzir respostas inadequadas ou resultados incorretos.
+- Identificar quais decisões ou funcionalidades ainda exigiriam validação humana.
+
+7. Demonstrar a aplicação CitizenTech
+- Apresentar uma demonstração funcional da solução.
+- Mostrar exemplos de utilização, entradas e resultados gerados.
+- Explicar como a aplicação contribui para o problema e para o público definido.
+- Demonstrar como a funcionalidade de IA se integra à solução global do grupo.
+- Caso a integração completa não seja possível, apresentar uma simulação funcional e identificar claramente o que ainda precisaria ser desenvolvido.
+
+--------------------------------------------------------------------------------
+Sugestões de aplicações
+--------------------------------------------------------------------------------
+Os exemplos abaixo podem servir como ponto de partida. Os grupos podem propor outras aplicações, desde que estejam relacionadas ao problema CitizenTech escolhido.
+
+- Educação: Assistente de aprendizagem que utiliza materiais educacionais para responder dúvidas e recomendar conteúdos
+- Saúde e bem-estar: Assistente informativo que organiza conteúdos e orientações a partir de fontes confiáveis
+- Sustentabilidade: Sistema que gera recomendações para redução de desperdício e consumo de recursos
+- Mobilidade urbana: Assistente que interpreta informações sobre transporte e auxilia na consulta de alternativas de deslocamento
+- Agricultura: Aplicação que gera orientações a partir de informações sobre culturas, clima e documentos técnicos
+- Serviços públicos: Assistente que facilita o acesso a informações e documentos de serviços públicos
+- Acessibilidade: Aplicação que transforma ou adapta conteúdos para diferentes necessidades de comunicação
+
+--------------------------------------------------------------------------------
+Entregáveis
+--------------------------------------------------------------------------------
+O grupo deverá entregar:
+
+1. Aplicação funcional: protótipo que demonstre a funcionalidade generativa desenvolvida, com interface ou fluxo de interação.
+
+2. Código-fonte ou fluxo de implementação: notebook, repositório, projeto ou exportação da ferramenta de orquestração utilizada, conforme a abordagem escolhida.
+
+3. Documentação técnica, contendo:
+   - Descrição do problema e do público impactado;
+   - Abordagem de IA escolhida e justificativa;
+   - Modelo, ferramentas, bibliotecas e serviços utilizados;
+   - Arquitetura e fluxo de funcionamento;
+   - Estratégia de integração com a solução CitizenTech.
+
+4. Evidências de funcionamento e avaliação:
+   - Exemplos de entradas e saídas;
+   - Testes realizados;
+   - Análise da qualidade dos resultados;
+   - Limitações identificadas e estratégias de mitigação.
+
+5. Demonstração: apresentar como a aplicação funciona e explicar sua contribuição para a solução proposta.
+
+--------------------------------------------------------------------------------
+Critérios de avaliação — 10 pontos
+--------------------------------------------------------------------------------
+Definição do problema, público e funcionalidade proposta ............... 1,0
+Escolha e justificativa da abordagem de IA ............................. 1,0
+Implementação técnica do modelo ou arquitetura generativa .............. 2,0
+Desenvolvimento do fluxo e integração dos componentes .................. 1,5
+Testes, avaliação e qualidade dos resultados gerados ................... 1,5
+Análise de limitações, segurança e responsabilidade no uso da IA ....... 1,0
+Demonstração funcional da aplicação em vídeo ........................... 1,0
+Integração e contribuição para a solução CitizenTech ................... 1,0
+TOTAL ................................................................. 10,0
+
+--------------------------------------------------------------------------------
+Orientações gerais
+--------------------------------------------------------------------------------
+- O projeto deve utilizar o mesmo problema, público e contexto definidos pelo grupo para a Global Solution, mantendo a integração entre as disciplinas.
+- A aplicação deve utilizar efetivamente conceitos de Inteligência Artificial Generativa ou arquiteturas avançadas estudadas na disciplina.
+- Não basta apresentar uma interface que apenas encaminha perguntas a um chatbot genérico. É necessário demonstrar a funcionalidade desenvolvida, a abordagem técnica escolhida e sua contribuição para o problema.
+- Não é obrigatório treinar um modelo do zero. É permitido utilizar modelos pré-treinados, APIs e modelos open source, desde que o grupo demonstre conhecimento sobre sua utilização e integração.
+- Não é obrigatório desenvolver um dispositivo físico. Simulações são permitidas, desde que apresentem evidências verificáveis de funcionamento.
+- Funcionalidades que não forem implementadas devem ser identificadas como possibilidades de evolução futura.
+- Considerar aspectos de acessibilidade, segurança, proteção de dados, sustentabilidade e condições reais de utilização.
+
+Formação dos grupos: até 3 integrantes.
+
+Período de desenvolvimento: 4 a 19 de novembro de 2026.
+
+Identificação: a entrega deve conter uma capa com o nome completo e RM de todos os integrantes.
+
+Let's rock the future!

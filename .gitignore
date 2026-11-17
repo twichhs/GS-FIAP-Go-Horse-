@@ -1,0 +1,23 @@
+# ambiente
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.env
+
+# dados e pesos grandes (baixados/gerados pelos scripts)
+citizentech/visao/dataset/
+citizentech/visao/runs/
+citizentech/visao/*.pt
+*.pt
+!citizentech/visao/modelos/best.pt
+
+# saídas de vídeo (os vídeos finais vão para a pasta midia/ manualmente)
+citizentech/visao/saida/*.mp4
+citizentech/visao/saida/*.avi
+
+# índice vetorial do RAG (regenerado pelo notebook)
+citizentech/genai/indice_faiss/
+
+# banco local de testes
+*.db-journal

@@ -1,0 +1,33 @@
+[MQTT] Conectado a 127.0.0.1:1883 — assinando fiap/citizentech/grupoX/+/+
+   Banco: citizentech.db
+
+[STATUS] esp32-sim: online
+[TRECHO] esp32-sim entrou em: Rua Vergueiro, 1000-1400
+[OK]    leitura esp32-sim | Rua Vergueiro, 1000-1400 | prof 2 mm | 25.6°C 57.2%
+[OK]    leitura esp32-sim | Rua Vergueiro, 1000-1400 | prof 2 mm | 25.4°C 57.6%
+[OK]    leitura esp32-sim | Rua Vergueiro, 1000-1400 | prof 1 mm | 25.4°C 57.2%
+[OK]    leitura esp32-sim | Rua Vergueiro, 1000-1400 | prof 0 mm | 25.5°C 58.3%
+[TRECHO] esp32-sim entrou em: Av. Lins de Vasconcelos, 800-1200
+[OK]    leitura esp32-sim | Av. Lins de Vasconcelos, 800-1200 | prof 2 mm | 26.8°C 62.5%
+[LEVE]  leitura esp32-sim | Av. Lins de Vasconcelos, 800-1200 | prof 22 mm | 26.8°C 62.1%
+[LEVE]   Irregularidade leve em Av. Lins de Vasconcelos, 800-1200: ~22 mm (umidade 62.0%, 27.0°C)
+[OK]    leitura esp32-sim | Av. Lins de Vasconcelos, 800-1200 | prof 1 mm | 27.2°C 62.7%
+[GRAVE] leitura esp32-sim | Av. Lins de Vasconcelos, 800-1200 | prof 58 mm | 26.9°C 62.7%
+[ALERTA] Buraco GRAVE em Av. Lins de Vasconcelos, 800-1200: profundidade ~58 mm (umidade 62.0%, 27.0°C). Vistoria recomendada.
+[OK]    leitura esp32-sim | Av. Lins de Vasconcelos, 800-1200 | prof 3 mm | 26.8°C 61.1%
+[GRAVE] leitura esp32-sim | Av. Lins de Vasconcelos, 800-1200 | prof 63 mm | 26.8°C 62.7%
+[ALERTA] Buraco GRAVE em Av. Lins de Vasconcelos, 800-1200: profundidade ~63 mm (umidade 62.0%, 27.0°C). Vistoria recomendada.
+[TRECHO] esp32-sim entrou em: Rua Domingos de Morais, 2000-2400
+[OK]    leitura esp32-sim | Rua Domingos de Morais, 2000-2400 | prof 3 mm | 19.1°C 91.9% · pista úmida
+[LEVE]  leitura esp32-sim | Rua Domingos de Morais, 2000-2400 | prof 18 mm | 19.2°C 91.3% · pista úmida
+[LEVE]   Irregularidade leve em Rua Domingos de Morais, 2000-2400: ~18 mm (umidade 92.0%, 19.0°C)
+[LEVE]  leitura esp32-sim | Rua Domingos de Morais, 2000-2400 | prof 27 mm | 19.1°C 91.0% · pista úmida
+[LEVE]   Irregularidade leve em Rua Domingos de Morais, 2000-2400: ~27 mm (umidade 92.0%, 19.0°C)
+[OK]    leitura esp32-sim | Rua Domingos de Morais, 2000-2400 | prof 2 mm | 19.2°C 92.2% · pista úmida
+[TRECHO] esp32-sim entrou em: Av. Lins de Vasconcelos, 800-1200
+[ALERTA] Reporte manual do veículo esp32-sim em Av. Lins de Vasconcelos, 800-1200 (umidade 63.0%, 26.5°C).
+[ALERTA] Av. Lins de Vasconcelos, 800-1200 atingiu prioridade ALTA (pontuação 9.0: 2 graves, 1 leves, 1 reportes, 0 detecções visuais).
+[TRECHO] esp32-sim entrou em: Av. Lins de Vasconcelos, 800-1200
+[CMD]    comando enviado ao esp32-sim: {'acao': 'alerta', 'motivo': 'trecho crítico: Av. Lins de Vasconcelos, 800-1200', 'pontuacao': 9.0}
+[INFO]   evento alerta_recebido de esp32-sim
+[STATUS] esp32-sim: offline

@@ -1,0 +1,40 @@
+
+===== Situação 1 — pista em bom estado =====
+[EVENTO ] {"device": "esp32-sim", "tipo": "mudanca_trecho", "severidade": "info", "trecho": "SIM0001", "prof_mm": 0, "temp_c": 25.5, "umid": 58.0, "ts": 1794871658}
+[LEITURA] {"device": "esp32-sim", "trecho": "SIM0001", "dist_mm": 152, "prof_mm": 2, "temp_c": 25.6, "umid": 57.2, "pista_umida": false, "status": "ok", "ts": 1794871659}
+[LEITURA] {"device": "esp32-sim", "trecho": "SIM0001", "dist_mm": 152, "prof_mm": 2, "temp_c": 25.4, "umid": 57.6, "pista_umida": false, "status": "ok", "ts": 1794871659}
+[LEITURA] {"device": "esp32-sim", "trecho": "SIM0001", "dist_mm": 151, "prof_mm": 1, "temp_c": 25.4, "umid": 57.2, "pista_umida": false, "status": "ok", "ts": 1794871659}
+[LEITURA] {"device": "esp32-sim", "trecho": "SIM0001", "dist_mm": 150, "prof_mm": 0, "temp_c": 25.5, "umid": 58.3, "pista_umida": false, "status": "ok", "ts": 1794871660}
+
+===== Situação 2 — buracos na pista =====
+[EVENTO ] {"device": "esp32-sim", "tipo": "mudanca_trecho", "severidade": "info", "trecho": "SIM0002", "prof_mm": 0, "temp_c": 27.0, "umid": 62.0, "ts": 1794871660}
+[LEITURA] {"device": "esp32-sim", "trecho": "SIM0002", "dist_mm": 152, "prof_mm": 2, "temp_c": 26.8, "umid": 62.5, "pista_umida": false, "status": "ok", "ts": 1794871660}
+[LEITURA] {"device": "esp32-sim", "trecho": "SIM0002", "dist_mm": 172, "prof_mm": 22, "temp_c": 26.8, "umid": 62.1, "pista_umida": false, "status": "leve", "ts": 1794871661}
+[EVENTO ] {"device": "esp32-sim", "tipo": "buraco", "severidade": "leve", "trecho": "SIM0002", "prof_mm": 22, "temp_c": 27.0, "umid": 62.0, "ts": 1794871661}
+[LEITURA] {"device": "esp32-sim", "trecho": "SIM0002", "dist_mm": 151, "prof_mm": 1, "temp_c": 27.2, "umid": 62.7, "pista_umida": false, "status": "ok", "ts": 1794871661}
+[LEITURA] {"device": "esp32-sim", "trecho": "SIM0002", "dist_mm": 208, "prof_mm": 58, "temp_c": 26.9, "umid": 62.7, "pista_umida": false, "status": "grave", "ts": 1794871661}
+[EVENTO ] {"device": "esp32-sim", "tipo": "buraco", "severidade": "grave", "trecho": "SIM0002", "prof_mm": 58, "temp_c": 27.0, "umid": 62.0, "ts": 1794871662}
+[LEITURA] {"device": "esp32-sim", "trecho": "SIM0002", "dist_mm": 153, "prof_mm": 3, "temp_c": 26.8, "umid": 61.1, "pista_umida": false, "status": "ok", "ts": 1794871662}
+[LEITURA] {"device": "esp32-sim", "trecho": "SIM0002", "dist_mm": 213, "prof_mm": 63, "temp_c": 26.8, "umid": 62.7, "pista_umida": false, "status": "grave", "ts": 1794871662}
+[EVENTO ] {"device": "esp32-sim", "tipo": "buraco", "severidade": "grave", "trecho": "SIM0002", "prof_mm": 63, "temp_c": 27.0, "umid": 62.0, "ts": 1794871663}
+
+===== Situação 3 — chuva / pista úmida =====
+[EVENTO ] {"device": "esp32-sim", "tipo": "mudanca_trecho", "severidade": "info", "trecho": "SIM0003", "prof_mm": 0, "temp_c": 19.0, "umid": 92.0, "ts": 1794871663}
+[LEITURA] {"device": "esp32-sim", "trecho": "SIM0003", "dist_mm": 153, "prof_mm": 3, "temp_c": 19.1, "umid": 91.9, "pista_umida": true, "status": "ok", "ts": 1794871663}
+[LEITURA] {"device": "esp32-sim", "trecho": "SIM0003", "dist_mm": 168, "prof_mm": 18, "temp_c": 19.2, "umid": 91.3, "pista_umida": true, "status": "leve", "ts": 1794871664}
+[EVENTO ] {"device": "esp32-sim", "tipo": "buraco", "severidade": "leve", "trecho": "SIM0003", "prof_mm": 18, "temp_c": 19.0, "umid": 92.0, "ts": 1794871664}
+[LEITURA] {"device": "esp32-sim", "trecho": "SIM0003", "dist_mm": 177, "prof_mm": 27, "temp_c": 19.1, "umid": 91.0, "pista_umida": true, "status": "leve", "ts": 1794871664}
+[EVENTO ] {"device": "esp32-sim", "tipo": "buraco", "severidade": "leve", "trecho": "SIM0003", "prof_mm": 27, "temp_c": 19.0, "umid": 92.0, "ts": 1794871664}
+[LEITURA] {"device": "esp32-sim", "trecho": "SIM0003", "dist_mm": 152, "prof_mm": 2, "temp_c": 19.2, "umid": 92.2, "pista_umida": true, "status": "ok", "ts": 1794871665}
+
+===== Situação 4 — reporte manual (botão) =====
+[EVENTO ] {"device": "esp32-sim", "tipo": "mudanca_trecho", "severidade": "info", "trecho": "SIM0002", "prof_mm": 0, "temp_c": 26.5, "umid": 63.0, "ts": 1794871665}
+[EVENTO ] {"device": "esp32-sim", "tipo": "reporte_manual", "severidade": "info", "trecho": "SIM0002", "prof_mm": 0, "temp_c": 26.5, "umid": 63.0, "ts": 1794871665}
+
+===== Situação 5 — veículo entra em trecho de prioridade ALTA =====
+[EVENTO ] {"device": "esp32-sim", "tipo": "mudanca_trecho", "severidade": "info", "trecho": "SIM0002", "prof_mm": 0, "temp_c": 26.5, "umid": 63.0, "ts": 1794871666}
+   [esp32-sim] COMANDO RECEBIDO: {"acao": "alerta", "motivo": "trecho crítico: Av. Lins de Vasconcelos, 800-1200", "pontuacao": 9.0}
+   -> LED vermelho piscando por 5 s
+[EVENTO ] {"device": "esp32-sim", "tipo": "alerta_recebido", "severidade": "info", "trecho": "SIM0002", "prof_mm": 0, "temp_c": 26.5, "umid": 63.0, "ts": 1794871666}
+
+Simulação concluída.
